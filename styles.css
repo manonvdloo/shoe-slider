@@ -1,0 +1,441 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  
+}
+
+.hero {
+  background: linear-gradient(107deg, #3C3D41 1.2%, #1D1E25 39.49%, #181820 99.41%);
+  height: 110vh;
+  overflow: hidden;
+  box-sizing: border-box;
+ 
+  
+  
+  
+}
+
+.hero-navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-navbar__logo {
+  padding: 30px;
+}
+
+.hero-navbar__menu-items {
+  display: none;
+  margin-right: 30px;
+}
+
+.hero-navbar__menu-items a {
+  text-decoration: none;
+  color: #FFF;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  padding: 5px 30px;
+  display: inline-block;
+}
+
+.hero-navbar__icons {
+  padding: 30px;
+  display: flex;
+  
+}
+
+.hero-navbar__icons img {
+  padding: 0px 15px;
+}
+
+.hero-navbar__icons--searchbox {
+  border-radius: 5px;
+  background: rgba(182, 182, 182, 0.20);
+  display: flex;
+  align-items: center;
+  padding-right: 80px;
+  margin-right: 30px;
+}
+
+.hero-navbar__icons--searchbox p {
+  color: #FFF;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+
+.hero-navbar__bag-and-menu-icons{
+  cursor: pointer;
+}
+
+
+
+.hero-main__nike-text {
+  color: rgba(0, 0, 0, 0.30);
+  font-family: "Kanit", sans-serif;
+  /*font-size: 550px;*/
+  font-size: 500px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: block;
+  position: absolute;
+  transform: translate(-50%, 0);
+  left: 50%; 
+}
+
+.hero-main {
+  width: 100%;
+  height: 110vh;
+  background-image: url(assets/nikeswoosh.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 85%;
+  display: flex;
+  
+}
+
+
+
+.hero-main__product-info {
+  width: 20%;
+}
+
+.hero-main__product-margin-box{
+  margin-top: 155px;
+  margin-left: 35px;
+  position: relative;
+}
+
+
+.hero-main__product-title-nike-impact {
+  color: #FFF;
+  font-family: "Jockey One", sans-serif;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  opacity: 0; /*hidden for gsap animation*/
+  transform: translateY(2.5rem); /* which equals 40px */
+}
+
+.hero-main__product-title-nike-air-max, .hero-main__product-title-nike-impact4, .hero-main__product-title-nike-maxsolo, .hero-main__product-title-nike-maxlite{
+  color: #FFF;
+  font-family: "Jockey One", sans-serif;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  opacity: 0; /*hidden for gsap animation*/
+  transform: translateY(2.5rem); /* which equals 40px */
+}
+
+.hero-main__product-title--color-number {
+  color: #BE2D7F;
+  font-family: "Jockey One", sans-serif;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero-main__product-price-nike-impact{
+  color: #FFF;
+  font-family: Inter, sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 18px;
+  opacity: 0; /*hidden for gsap animation*/
+  transform: translateY(2.5rem); /* which equals 40px */
+}
+
+.hero-main__product-price-nike-air-max, .hero-main__product-price-nike-impact4, .hero-main__product-price-nike-maxsolo, .hero-main__product-price-nike-maxlite {
+  color: #FFF;
+  font-family: Inter, sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  top: 95px;
+  opacity: 0; /*hidden for gsap animation*/
+  transform: translateY(2.5rem); /* which equals 40px */
+}
+
+.hero-main__subheading{
+  color: #FFF;
+  font-family: "Jockey One", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 32px;
+  margin-bottom: 15px;
+}
+
+.hero-main__color-picker{
+  cursor: pointer;
+}
+
+.hero-main__subheading--size {
+   color: #FFF;
+  font-family: "Jockey One", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.hero-main__size-picker{
+  display: flex;
+}
+
+.hero-main__size-picker svg{
+  cursor: pointer;
+}
+
+.hero-main__buy-button{
+  border-radius: 11px;
+  background: #ED3B6B;
+  width: 239px;
+  height: 58px;
+  flex-shrink: 0;
+  border: none;
+  margin-top: 38px;
+  cursor: pointer;
+}
+
+.hero-main__buy-button-text{
+  color: #FFF;
+  font-family: "Jockey One", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero-main__product-pics {
+  width: 65%;
+  position: relative;
+}
+
+.hero-main__product-pics-large{
+  height: 78%;
+  width: auto;
+  position: absolute;
+  right: 300px;
+  opacity: 0; /*hidden for gsap animation*/
+  transform: translateY(2.5rem); /* which equals 40px */
+  
+}
+
+.hero-main__product-pics-large--airmax{
+  height: 80%;
+  width: auto;
+  position: absolute;
+  right: 300px;
+  opacity: 0; /*hidden for gsap animation*/
+  transform: translateY(2.5rem); /* which equals 40px */
+}
+
+.background-gradient-1 {
+  width: 298px; /* 298 to 200*/
+  height: 142px; /*142 to 95*/
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 510px; /*142px plus 20px for gap */
+  right: 140px;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='298' height='142' viewBox='0 0 298 142' fill='none'%3E%3Cpath d='M148.322 0L298 0L149.678 142H0L148.322 0Z' fill='url(%23paint0_linear_9_5)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_9_5' x1='298' y1='-9.31889e-06' x2='-5.71384e-06' y2='142' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF67F9'/%3E%3Cstop offset='0.262695' stop-color='%23DB6EFA'/%3E%3Cstop offset='1' stop-color='%230085FF'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+}
+
+.hero-main__product-pics-impact1{
+  position: absolute;
+  z-index: 2;
+  bottom: 550px; /*187px + 20px for gap*/
+  right: 220px;
+  height: 100px;
+  opacity: 0; /*hidden for gsap animation*/
+  transform: translateY(2.5rem); /* which equals 40px */
+  
+}
+
+.hero-main__product-pics-airmax1{
+  position: absolute;
+  z-index: 2;
+  bottom: 550px; /*187px + 20px for gap*/
+  right: 220px;
+  height: 90px;
+  opacity: 0; /*hidden for gsap animation*/
+  transform: translateY(2.5rem); /* which equals 40px */
+  
+}
+
+.background-gradient-2{
+  width: 298px;
+  height: 142px;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 360px;
+  right: 300px; /*149px + 20px for gap*/
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='297' height='142' viewBox='0 0 297 142' fill='none'%3E%3Cpath d='M147.824 0L297 0L149.176 142H0L147.824 0Z' fill='url(%23paint0_linear_9_9)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_9_9' x1='297' y1='-9.25645e-06' x2='-2.6934e-06' y2='142' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23CC0087'/%3E%3Cstop offset='1' stop-color='%23905CFF'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+}
+
+.hero-main__product-pics-impact2{
+  position: absolute;
+  z-index: 2;
+  bottom: 385px; 
+  right: 380px; 
+  opacity: 0; /*hidden for gsap animation*/
+  transform: translateY(2.5rem); /* which equals 40px */
+}
+  
+.background-gradient-3{
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='298' height='142' viewBox='0 0 298 142' fill='none'%3E%3Cpath d='M148.322 0L298 0L149.678 142H0L148.322 0Z' fill='url(%23paint0_linear_9_10)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_9_10' x1='298' y1='9.53779e-06' x2='-7' y2='142' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF5353'/%3E%3Cstop offset='1' stop-color='white'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+  width: 298px;
+  height: 142px;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 210px;
+  right: 450px;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
+.hero-main__product-pics-impact3{
+  position: absolute;
+  z-index: 2;
+  bottom: 250px; 
+  right: 507px; 
+  opacity: 0; /*hidden for gsap animation*/
+  transform: translateY(2.5rem); /* which equals 40px */
+}
+
+
+
+
+.hero-main__product-slider {
+  width: 15%;
+  position: relative;
+}
+
+
+
+
+
+
+
+.hero-main__slider-circle-border {
+  width: 364px;
+  height: 364px;
+  flex-shrink: 0;
+  background: linear-gradient(#181820 99.41%, #181820 99.41%) padding-box,
+              linear-gradient(90deg, #C8C8C8 0%, rgba(255, 255, 255, 0.00) 33.38%) border-box;
+  border-radius: 50em;
+  border: 20px solid transparent;
+  position: absolute;
+  right: -250px;
+  top: 260px;
+
+}
+
+.hero-main__slider-top-background{
+  position: absolute;
+  right: 10px;
+  top: 170px;
+}
+
+.hero-main__product-slider-top-picture{
+  position: absolute;
+  right: 10px;
+  top: 195px;
+  width: 120px;
+  height: auto;
+  transform: rotate(53.363deg);
+
+}
+
+.hero-main__slider-second-background{
+  position: absolute;
+  right: 90px;
+  top: 270px;
+}
+
+.hero-main__product-slider-second-picture{
+  position: absolute;
+  right: 95px;
+  top: 293px;
+  width: 120px;
+  height: auto;
+  transform: rotate(31.938deg);
+  
+}
+
+.hero-main__slider-middle-background {
+  position: absolute;
+  right: 125px;
+  top: 400px;
+}
+
+.hero-main__product-slider-middle-picture{
+  position: absolute;
+  right: 130px;
+  top: 405px;
+  width: 120px;
+  height: auto;
+  
+}
+
+.hero-main__slider-fouth-background{
+  position: absolute;
+  right: 80px;
+  top: 500px;
+}
+
+.hero-main__product-slider-fourth-picture{
+  position: absolute;
+  right: 90px;
+  top: 520px;
+  width: 120px;
+  height: auto;
+  transform: rotate(-35.597deg);
+}
+
+.hero-main__slider-bottom-background{
+  position: absolute;
+  right: 5px;
+  top: 580px;
+}
+
+.hero-main__product-slider-bottom-picture{
+  position: absolute;
+  right: 8px;
+  top: 610px;
+  width: 120px;
+  height: auto;
+  transform: rotate(-54.788deg);
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .hero-navbar__menu-items {
+    display: block;
+  }
+  
+}
